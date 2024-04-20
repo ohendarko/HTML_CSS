@@ -19,18 +19,11 @@
     }
 
     .subscribe-button:hover {
-      background-color: rgb(202, 0, 0);
-      color: white;
-      border: none;
-      height: 36px;
-      width: 105px;
-      border-radius: 2px;
-      cursor: pointer;
-      margin-right: 8px;
+      opacity: 0.8;
     }
 
     .subscribe-button:active {
-      background-color: blue;
+      opacity: 0.5;
     }
 
     .join-button {
@@ -45,8 +38,18 @@
       cursor: pointer;
     }
 
+    .join-button:hover {
+      background-color: rgb(41, 128, 215);
+      color: white;
+    }
+
+    .join-button:active {
+      opacity: 0.7;
+    }
+
     .tweet-button {
       background-color: rgb(41, 128, 215);
+      color: white;
       border: none;
       height: 36px;
       width: 74px;
@@ -59,6 +62,6 @@
   </style>
   <button class="subscribe-button">SUBSCRIBE</button>
   <button class="join-button">JOIN</button>
-  <button class="tweet-button">JOIN</button>
+  <button class="tweet-button">Tweet</button>
 </body>
 </html>
