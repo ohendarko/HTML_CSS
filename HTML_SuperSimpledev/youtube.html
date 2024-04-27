@@ -19,16 +19,8 @@
       }
 
       .thumbnail {
-        width: 300px;
+        width: 100%;
         display: block;
-      }
-
-      .video-preview {
-        width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 15px;
-
       }
 
       .search-bar {
@@ -44,14 +36,20 @@
       }
 
       .channel-picture {
-        display: inline-block;
-        width: 50px;
+        width: 100%;
         vertical-align: top;
       }
 
-      .video-info {
-        display: inline-block;
-        width: 200px;
+      .video-preview {
+        width: 300px;
+        display: grid;
+        grid-template-rows: 180px 1fr;
+      }
+
+      .video-summary {
+        display: grid;
+        grid-template-columns:40px 1fr;
+        column-gap: 10px;
       }
 
       .profile-picture {
@@ -75,9 +73,9 @@
 
       .video-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 300px 300px 300px;
         column-gap: 20px;
-        row-gap: 40px;
+        row-gap: 50px;
       }
 
     </style>
@@ -90,7 +88,7 @@
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="Pictuer showing...">
         </div>
-        <div class="video-info">
+        <div class="video-summary">
           <div class="channel-picture">
             <img class="profile-picture" src="channel-pictures/channel-1.jpeg" alt="">
           </div>
@@ -112,7 +110,7 @@
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="Picture showing...">
         </div>
-        <div>
+        <div class="video-summary">
           <div class="channel-picture">
             <img class="profile-picture" src="channel-pictures/channel-2.jpeg" alt="">
           </div>
@@ -132,9 +130,31 @@
 
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="Pictuer showing...">
+          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="Pictuer showing...">
         </div>
-        <div>
+        <div class="video-summary">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-1.jpeg" alt="">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">
+              Marques Brownlee
+            </p>
+            <p class="video-stats">
+              3.4M views &#183; 6 months ago
+            </p>
+          </div>     
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="Picture showing...">
+        </div>
+        <div class="video-summary">
           <div class="channel-picture">
             <img class="profile-picture" src="channel-pictures/channel-2.jpeg" alt="">
           </div>
@@ -154,53 +174,31 @@
 
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="Pictuer showing...">
+          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="Pictuer showing...">
         </div>
-        <div>
+        <div class="video-summary">
           <div class="channel-picture">
-            <img class="profile-picture" src="channel-pictures/channel-2.jpeg" alt="">
+            <img class="profile-picture" src="channel-pictures/channel-1.jpeg" alt="">
           </div>
           <div class="video-info">
             <p class="video-title">
-              Try Not To Laugh Challenge #9
+            Talking Tech and AI with Google CEO Sundar Pichai!
             </p>
             <p class="video-author">
-              Markiplier
+              Marques Brownlee
             </p>
             <p class="video-stats">
-              19M views &#183; 4 years ago
+              3.4M views &#183; 6 months ago
             </p>
           </div>     
         </div>
       </div>
-
+      
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="Pictuer showing...">
+          <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="Picture showing...">
         </div>
-        <div>
-          <div class="channel-picture">
-            <img class="profile-picture" src="channel-pictures/channel-2.jpeg" alt="">
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              Try Not To Laugh Challenge #9
-            </p>
-            <p class="video-author">
-              Markiplier
-            </p>
-            <p class="video-stats">
-              19M views &#183; 4 years ago
-            </p>
-          </div>     
-        </div>
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="Pictuer showing...">
-        </div>
-        <div>
+        <div class="video-summary">
           <div class="channel-picture">
             <img class="profile-picture" src="channel-pictures/channel-2.jpeg" alt="">
           </div>
