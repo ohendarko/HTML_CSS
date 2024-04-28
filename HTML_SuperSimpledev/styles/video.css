@@ -1,16 +1,5 @@
-body {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-}
-
-p {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .thumbnail {
   width: 100%;
-  display: block;
 }
 
 .video-title {
@@ -29,7 +18,8 @@ p {
 .video-preview {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  max-height: 300px;
+  max-height: 370px;
+  margin-top: 20px;
 }
 
 .video-summary {
@@ -45,6 +35,7 @@ p {
 
 .thumbnail-row {
   margin-bottom: 12px;
+  max-width: 600px;
 }
 
 .video-author,
@@ -59,7 +50,7 @@ p {
 
 .video-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   width: 100%;
   column-gap: 20px;
   row-gap: 60px;
