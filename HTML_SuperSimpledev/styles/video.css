@@ -19,7 +19,6 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
   max-height: 370px;
-  margin-top: 20px;
 }
 
 .video-summary {
