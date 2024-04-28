@@ -7,82 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: Roboto, Arial, Helvetica, sans-serif;
-      }
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    
 
-      p {
-        font-family: Roboto, Arial, Helvetica, sans-serif;
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-
-      .thumbnail {
-        width: 100%;
-        display: block;
-      }
-
-      .search-bar {
-        display: block;
-      }
-
-      .video-title {
-        margin-top: 0;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;
-        margin-bottom: 12px;
-      }
-
-      .channel-picture {
-        width: 100%;
-        vertical-align: top;
-      }
-
-      .video-preview {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        max-height: 300px;
-      }
-
-      .video-summary {
-        display: grid;
-        grid-template-columns:40px 1fr;
-        column-gap: 10px;
-      }
-
-      .profile-picture {
-        width: 40px;
-        border-radius: 50%;
-      }
-
-      .thumbnail-row {
-        margin-bottom: 12px;
-      }
-
-      .video-author,
-      .video-stats {
-        font-size: 12px;
-        color: rgb(96, 96, 96);
-      }
-
-      .video-author {
-        margin-bottom: 4px;
-      }
-
-      .video-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-        width: 100%;
-        column-gap: 20px;
-        row-gap: 60px;
-      }
-
-    </style>
   </head>
   <body>
-    <input class="search-bar" type="text" name="" id="" placeholder="Search">
+    <div class="header">
+      <div class="left-section"></div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" name="" id="" placeholder="Search">
+      </div>
+      <div class="right-section"></div>
+    </div>
+    
 
     <div class="video-container">
       <div class="video-preview">
