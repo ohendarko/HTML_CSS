@@ -4,10 +4,35 @@
   bottom: 0;
   top: 55px;
   background-color: white;
-  width: 72px;
+  width: 80px;
+  border-top: 1px solid;
+  border-top-color: white;
+  z-index: 2;
+  padding-top: 5px;
 }
 
 .sidebar-link {
-  background-color: lightgray;
-  height: 50px;
+  background-color: white;
+  height: 80px;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+
+}
+
+.sidebar-link:hover {
+  background-color: rgb(238, 237, 237);
+}
+
+.sidebar-link img {
+  height: 24px;
+}
+
+.sidebar p {
+  font-size: 10px;
+  margin-top: 5px;
+  font-family: Roboto, Arial;
 }
